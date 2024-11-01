@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{C5AC57
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{36C43BC3-D221-4A80-B5B6-30CEB7829782}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", "{0E47C4E9-0930-4419-97C8-7986D663C139}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{82EAEEAC-87E5-4800-AA7C-0A1EC0D4A8A1} = {0E47C4E9-0930-4419-97C8-7986D663C139}
 		{EAF657BC-6144-45E8-9B5F-F2866F9AE147} = {C5AC573C-D0F9-4DEF-9A1F-886FE68E5490}
 		{C1680E16-4EDD-4A93-9875-C04DEAAC39D1} = {36C43BC3-D221-4A80-B5B6-30CEB7829782}
 	EndGlobalSection
