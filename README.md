@@ -16,5 +16,11 @@ I created another api called Client with some methods using localhost and the po
 ![image](https://github.com/user-attachments/assets/5286090e-ee4d-40de-a573-1424c3c3d5aa)
 
 # Ocelot
+Setting up program.cs
 ![image](https://github.com/user-attachments/assets/d4dab176-4789-4145-9f13-5a0a3f2c32bb)
+
+setting up ocelot.json
 ![image](https://github.com/user-attachments/assets/f8394550-0e92-4e6a-92be-10484919b5b7)
+
+# Postman sending request to Ocelot Api Gateway
+![image](https://github.com/user-attachments/assets/aad40bd6-33be-480d-89d9-613385993494)
