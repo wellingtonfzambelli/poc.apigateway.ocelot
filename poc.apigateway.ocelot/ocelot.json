@@ -6,9 +6,11 @@
     
     // CLIENTS
     {
+      // From ocelot endpoint
       "UpstreamPathTemplate": "/gateway/{version}/clients/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
 
+      // Redirect to api endpoint
       "DownstreamPathTemplate": "/api/{version}/clients/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -18,10 +20,12 @@
         }
       ],
 
+      // Cache
       "FileCacheOptions": {
         "TtlSeconds": 10
       },
 
+      // Rate Limit
       "RateLimitOptions": {
         "ClientWhitelist": [],
         "EnableRateLimiting": true,
