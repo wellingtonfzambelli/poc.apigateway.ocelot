@@ -18,7 +18,7 @@ public sealed class ClientController : ControllerBase
    };
 
     [HttpGet]
-    public async Task<IEnumerable<Client>> GetAsync(CancellationToken ct) =>
+    public IEnumerable<Client> Get() =>
         _clients;
 
     [HttpGet("{id}")]

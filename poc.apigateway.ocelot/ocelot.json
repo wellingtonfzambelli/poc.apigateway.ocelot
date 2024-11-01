@@ -1,6 +1,8 @@
 {
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:5000" // Base URL Api Gateway
+    "BaseUrl": "http://localhost:5000", // Base URL Api Gateway
+    "RequestIdKey": "x-correlation-id",
+    
   },
   "Routes": [
     
