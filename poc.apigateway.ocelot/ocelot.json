@@ -1,11 +1,11 @@
 {
   "GlobalConfiguration": {
     "BaseUrl": "http://localhost:5000", // Base URL Api Gateway
-    "RequestIdKey": "x-correlation-id",
+    "RequestIdKey": "x-correlation-id"
     
   },
   "Routes": [
-    
+
     // CLIENTS
     {
       // From ocelot endpoint
@@ -35,6 +35,39 @@
         "PeriodTimespan": 10,
         "Limit": 3
       }
+    },
+
+
+    // CATALOG
+    {
+      // From ocelot endpoint
+      "UpstreamPathTemplate": "/gateway/{version}/catalogs/{everything}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ],
+
+      // Redirect to api endpoint
+      "DownstreamPathTemplate": "/api/{version}/catalogs/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7240
+        }
+      ],
+
+      // Cache
+      "FileCacheOptions": {
+        "TtlSeconds": 60
+      },
+
+      // Rate Limit
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "5s",
+        "PeriodTimespan": 5,
+        "Limit": 2
+      }
     }
+
   ]
 }

@@ -6,7 +6,7 @@ namespace client.api.Controllers;
 [ApiController]
 [Route("api/v1/clients")]
 public sealed class ClientController : ControllerBase
-{ 
+{
     private static IList<Client> _clients = new List<Client>
    {
         new Client { Id = 1, Name = "John Smith", Email = "john.smith@gmail.com" },
@@ -39,8 +39,8 @@ public sealed class ClientController : ControllerBase
     public IActionResult Update(int id, Client client)
     {
         var clientDB = _clients.FirstOrDefault(s => s.Id == id);
-        
-        if (clientDB is null) 
+
+        if (clientDB is null)
             return NotFound();
 
         clientDB.Name = client.Name;
@@ -53,8 +53,8 @@ public sealed class ClientController : ControllerBase
     public IActionResult Delete(int id)
     {
         var client = _clients.FirstOrDefault(c => c.Id == id);
-        
-        if (client is null) 
+
+        if (client is null)
             return NotFound();
 
         _clients.Remove(client);

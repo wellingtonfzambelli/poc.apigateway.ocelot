@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Mvc;
 namespace catalog.api.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/v1/catalogs")]
 public sealed class CatalogController : ControllerBase
 {
-    private static readonly Catalog[] _catalogs = new Catalog[]
+    private static IList<Catalog> _catalogs = new List<Catalog>
     {
         new Catalog{ Id = 1, Name = "Electronics" },
         new Catalog{ Id = 2, Name = "Books" },
@@ -19,4 +19,24 @@ public sealed class CatalogController : ControllerBase
     [HttpGet(Name = "GetCatalogs")]
     public async Task<IEnumerable<Catalog>> GetAsync(CancellationToken ct) =>
         _catalogs;
+
+    [HttpGet("{id}")]
+    public ActionResult<Catalog> GetById(int id)
+    {
+        var catalog = _catalogs.FirstOrDefault(c => c.Id == id);
+        return catalog != null ? Ok(catalog) : NotFound();
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult Delete(int id)
+    {
+        var catalog = _catalogs.FirstOrDefault(c => c.Id == id);
+
+        if (catalog is null)
+            return NotFound();
+
+        _catalogs.Remove(catalog);
+
+        return NoContent();
+    }
 }
