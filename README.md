@@ -3,7 +3,7 @@ This is a .NET 8 project to show how to implement the Ocelot Api Gateway.
 I created 2 simple api's to be mapped in Ocelot
 
 # Project structure
-![image](https://github.com/user-attachments/assets/562566e1-bfe7-46ce-a4ea-628029638aeb)
+![image](https://github.com/user-attachments/assets/d07f5aa1-5831-4725-b885-2f5b2642684a)
 
 # Catalog Api
 I created the Catalog Api with static data and some methods to be exposed using localhost and the port 7240
