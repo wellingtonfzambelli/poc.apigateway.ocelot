@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace client.api.Controllers;
 
 [ApiController]
-[Route("api/clients")]
+[Route("api/v1/clients")]
 public sealed class ClientController : ControllerBase
 { 
     private static IList<Client> _clients = new List<Client>

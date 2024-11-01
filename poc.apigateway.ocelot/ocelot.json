@@ -6,10 +6,10 @@
     
     // CLIENTS
     {
-      "UpstreamPathTemplate": "/gateway/clients/{everything}",
+      "UpstreamPathTemplate": "/gateway/{version}/clients/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
 
-      "DownstreamPathTemplate": "/api/clients/{everything}",
+      "DownstreamPathTemplate": "/api/{version}/clients/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -18,11 +18,16 @@
         }
       ],
 
+      "FileCacheOptions": {
+        "TtlSeconds": 10
+      },
+
       "RateLimitOptions": {
         "ClientWhitelist": [],
         "EnableRateLimiting": true,
         "Period": "10s",
-        "Limit": 1
+        "PeriodTimespan": 10,
+        "Limit": 3
       }
     }
   ]
