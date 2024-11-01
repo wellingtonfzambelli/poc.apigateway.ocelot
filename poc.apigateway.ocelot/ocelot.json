@@ -4,20 +4,26 @@
   },
   "Routes": [
     
-    // Clients
+    // CLIENTS
     {
-      "UpstreamPathTemplate": "/gateway/clients",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/gateway/clients/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
 
-      "DownstreamPathTemplate": "/api/clients",
+      "DownstreamPathTemplate": "/api/clients/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
           "Port": 5138
         }
-      ]
-    }
+      ],
 
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "10s",
+        "Limit": 1
+      }
+    }
   ]
 }
