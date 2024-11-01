@@ -1,6 +1,0 @@
-@poc.apigateway.ocelot_HostAddress = http://localhost:5232
-
-GET {{poc.apigateway.ocelot_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
