@@ -7,7 +7,7 @@ It includes two example Minimal APIs that are mapped through Ocelot to illustrat
 - .NET 8
 - Minimal Api
 - Ocelot Api Gateway
-- Postman  (for API testing)
+- Postman  _(for API testing)_
 
 # Project structure
 ![image](https://github.com/user-attachments/assets/8f0691e4-203f-4344-874f-13769ff92426)
