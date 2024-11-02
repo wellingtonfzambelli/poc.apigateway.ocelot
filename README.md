@@ -1,4 +1,4 @@
-**Stacks of this project**
+# Stacks of this project
 - .NET 8
 - Minimal Api
 - Ocelot Api Gateway
