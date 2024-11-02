@@ -24,3 +24,7 @@ setting up ocelot.json
 
 # Postman sending request to Ocelot Api Gateway
 ![image](https://github.com/user-attachments/assets/aad40bd6-33be-480d-89d9-613385993494)
+
+Ocelot Rate Limit
+![image](https://github.com/user-attachments/assets/97f02cb1-df70-4e4b-b05b-76ff16a029ce)
+
