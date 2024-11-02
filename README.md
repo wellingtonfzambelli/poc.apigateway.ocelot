@@ -1,5 +1,5 @@
 # About
-This project demonstrates how to implement an API Gateway using .NET 8 and Ocelot. 
+This project demonstrates how to implement an API Gateway using .NET 8 and Ocelot.
 It includes two example Minimal APIs that are mapped through Ocelot to illustrate a simple, flexible API Gateway setup.
 
 # Stacks of this project
