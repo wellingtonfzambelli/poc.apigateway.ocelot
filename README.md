@@ -5,11 +5,11 @@ It includes two example Minimal APIs that are mapped through Ocelot to illustrat
 
 # Stacks of this project
 - .NET 8
-- Visual Studio 2022
 - Minimal Api
 - Swagger
 - Ocelot Api Gateway
 - Postman  _(for API testing)_
+- Visual Studio 2022
 
 # Project structure
 ![image](https://github.com/user-attachments/assets/8f0691e4-203f-4344-874f-13769ff92426)
