@@ -7,12 +7,12 @@ I created 2 simple api's to be mapped in Ocelot
 
 # Catalog Api
 I created the Catalog Api with static data and some methods to be exposed using localhost and the port 7240
-![image](https://github.com/user-attachments/assets/d6f227a2-e052-4c4b-9984-15d7fa1cc992)
+![image](https://github.com/user-attachments/assets/f1793d8f-eb60-4a9e-b01b-671dcaf61f6a)
 ![image](https://github.com/user-attachments/assets/5c6b8330-d96b-448a-a1b5-5685a14d8580)
 
 # Client Api
 I created another api called Client with some methods using localhost and the port 5138
-![image](https://github.com/user-attachments/assets/d678b192-879f-4f7e-a0de-7fb3ef3f5051)
+![image](https://github.com/user-attachments/assets/8696bd4e-0478-43ee-becc-f83e5a822763)
 ![image](https://github.com/user-attachments/assets/5286090e-ee4d-40de-a573-1424c3c3d5aa)
 
 # Ocelot
