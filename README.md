@@ -6,6 +6,7 @@ It includes two example Minimal APIs that are mapped through Ocelot to illustrat
 # Stacks of this project
 - .NET 8
 - Minimal Api
+- Swagger
 - Ocelot Api Gateway
 - Postman  _(for API testing)_
 
