@@ -2,7 +2,7 @@
 This is a .NET 8 project to show how to implement the Ocelot Api Gateway.
 I created 2 simple api's to be mapped in Ocelot
 
-** Stacks of this project **
+*** Stacks of this project ***
 - .NET 8
 - Minimal Api
 - Ocelot Api Gateway
